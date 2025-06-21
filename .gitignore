@@ -396,19 +396,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-build_files
-raylib-master
-Makefile
-/*.sln
-build-MinGW-W64.bat
-build-VisualStudio2022.bat
-README.md
-.vscode/launch.json
-.vscode/settings.json
-.vscode/tasks.json
-build/premake5
-build/premake5.exe
-build/premake5.lua
-build/premake5.osx
-include/resource_dir.h
-resources/wabbit_alpha.png
