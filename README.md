@@ -1,5 +1,5 @@
 # Constrained Dynamics
-A simple implementation of a constrained mechanics simulator using C++ for the solving, Raylib for basic visualization and Python for plotting error.
+A simple implementation of a constrained mechanics simulator using C for the solving, Raylib for basic visualization and Python for plotting error.
 
 ## Working 
 The implementation is based off of the paper https://www.cs.cmu.edu/~baraff/pbm/constraints.pdf. Currently it simulates a basic double pendulum setup, with a
