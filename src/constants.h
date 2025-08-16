@@ -1,7 +1,7 @@
 #pragma once
 
-const float x0 = 400.f;
-const float y0 = 100.f;
+const float x_0 = 400.f;
+const float y_0 = 100.f;
 const float l1 = 200.f;
 const float l2 = 50.f;
 const float g = 980.f;
