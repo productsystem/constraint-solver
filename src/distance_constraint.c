@@ -1,7 +1,7 @@
 #include "distance_constraint.h"
 
-extern float x0;
-extern float y0;
+extern float x_0;
+extern float y_0;
 extern float l1;
 extern float l2;
 
@@ -12,8 +12,8 @@ void calc_J(Mat *J, float *q){
     float y2 = q[3];
 
     //(x1 -x0)^2 + (y1-y0)^2 - l1^2
-    set(J,0,0,2*(x1-x0));
-    set(J,0,1,2*(y1-y0));
+    set(J,0,0,2*(x1-x_0));
+    set(J,0,1,2*(y1-y_0));
     set(J,0,2,0);
     set(J,0,3,0);
     //(x2-x1)^2 + (y2-y1)^2 - l2^2
@@ -44,7 +44,7 @@ void calc_C(float *C, float *q){
     float x1 = q[0], y1 = q[1];
     float x2 = q[2], y2 = q[3];
     
-    C[0] = (x1 - x0)*(x1 - x0) + (y1 - y0)*(y1 - y0) - l1*l1;
+    C[0] = (x1 - x_0)*(x1 - x_0) + (y1 - y_0)*(y1 - y_0) - l1*l1;
     C[1] = (x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1) - l2*l2;
 }
 

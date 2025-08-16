@@ -151,9 +151,9 @@ int main(){
 		force[i] = 0;
 	}
 	q[0] = l1;
-	q[1] = y0;
+	q[1] = y_0;
 	q[2] = l1 + l2;
-	q[3] = y0;
+	q[3] = y_0;
 
 	for(int i = 0; i < 2; i++){
 		lambda[i] = 0;
@@ -198,13 +198,13 @@ int main(){
 
 		BeginDrawing();
 			ClearBackground(RAYWHITE);
-			DrawCircle(x0,y0,5,BLACK);
+			DrawCircle(x_0,y_0,5,BLACK);
 			DrawCircle(q[0],q[1],5,BLUE);
 			DrawCircle(q[2],q[3],5,RED);
-			DrawLine((int)x0, (int)y0, (int)q[0], (int)q[1], DARKGRAY);
+			DrawLine((int)x_0, (int)y_0, (int)q[0], (int)q[1], DARKGRAY);
 			DrawLine((int)q[0], (int)q[1], (int)q[2], (int)q[3], DARKGRAY);
 			DrawText(TextFormat("Energy : %.2f", E),0,0,10,BLACK);
-			float d1 = sqrtf((q[0] - x0)*(q[0] - x0) + (q[1] - y0)*(q[1] - y0));
+			float d1 = sqrtf((q[0] - x_0)*(q[0] - x_0) + (q[1] - y_0)*(q[1] - y_0));
 			float d2 = sqrtf((q[2] - q[0])*(q[2] - q[0]) + (q[3] - q[1])*(q[3] - q[1]));
 			DrawText(TextFormat("d1: %.2f, d2: %.2f", d1, d2), 0, 20, 10, RED);
 
